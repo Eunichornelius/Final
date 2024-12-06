@@ -103,7 +103,7 @@ body {
     padding-right: 25px;
     color: white;
     /*making the black background for the page less boring*/
-    background-image: url(/img/jeff.png);
+    background-image: url(img/jeff.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
