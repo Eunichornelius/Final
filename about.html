@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<!--metadata for the page. there is a callout for where I got the script to make my nav Menu work-->
+<head>
+  <link rel="icon" type="image/x-icon" href="img/icon.jpg">
+  <link rel="stylesheet" href="css/about.css">
+  <title>JSRR</title>
+  <script src="https://kit.fontawesome.com/e40d1a93d8.js" crossorigin="anonymous"></script>
+</head>
+<header>
+      <!--This is the Header and Navigation menu for the page-->
+      <div class="topbar_container">
+        <!--The logo for the webpage-->
+            <div class="logo" id="pageTop"> <img src="img/jeff1.png" alt="Jeffery Clawmer"> </div>
+        <!--This is calling the JS that allows the menu to collapse at smaller screen sizes-->
+    <a class="bar" href="javascript:void(0);" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+    <nav id="nav">
+      <ul>
+        <li class="nav"><a href="index.html">Home</a></li>
+        <li class="nav"><a href="links.html">Resources</a></li>
+        <li class="nav"><a href="about.html">About</a></li>
+        <li class="nav"><a href="jargon.html">Jargon</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<body>
+  <section>
+    <!--A few pictures of me and Jeff, with a little blurb about me and why I created this site.-->
+    <article>
+      My name is Sam Henninger, I'm the creator of this site. Along with my associate Mr. Jeffery Clawmer.
+      He is the real taskmaster of this operation. He is in charge of meal breaks, making sure I am on time
+      for work and class and ensuring I find time to sleep.
+      <img src="img/webmasters.jpg" class="responsive" alt="">
+    </article>
+    <article>
+      Even from his office, he can watch me at all times.
+      <img src="img/glasshouse.jpg" alt="">
+      In the field.
+      <img src="img/inthefield.jpg" class="responsive" alt="">
+    </article>
+    <article>
+      And why the website:
+      <img src="img/whythewebsite.jpg" alt="">
+    </article>
+  </section>
+    <!--This is the javascript used to make the navbar function-->
+    <script>
+      function myFunction() {
+          var x = document.getElementById("nav");
+          if (x.style.display === "none") {
+              x.style.display = "block";
+          } else {
+              x.style.display = "none";
+          }
+      }
+  </script>
+</body>
+<footer>
+  <br><a href="#">Return to Top</a><br>
+  <!--A link to the contact page for feedback... maybe-->
+  Author: Sam Henninger 2024 <a href="contact.html" target="_blank">Contact Us</a>
+</footer>
+
+</html>

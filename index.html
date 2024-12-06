@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<!--metadata for the page. there is a callout for where I got the script to make my nav Menu work-->
+<head>
+    <link rel="icon" type="image/x-icon" href="img/icon.jpg">
+    <link rel="stylesheet" href="css/home.css">
+    <title>JSRR</title>
+    <script src="https://kit.fontawesome.com/e40d1a93d8.js" crossorigin="anonymous"></script>
+</head>
+<header>
+    <!--This is the Header and Navigation menu for the page-->
+    <div class="topbar_container">
+        <!--The logo for the webpage-->
+            <div class="logo" id="pageTop"> <img src="img/jeff1.png" alt="Jeffery Clawmer"> </div>
+        <!--This is calling the JS that allows the menu to collapse at smaller screen sizes-->
+        <a class="bar" href="javascript:void(0);" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+        <nav id="nav">
+            <ul>
+                <li class="nav"><a href="index.html">Home</a></li>
+                <li class="nav"><a href="links.html">Resources</a></li>
+                <li class="nav"><a href="about.html">About</a></li>
+                <li class="nav"><a href="jargon.html">Jargon</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <!--A quick title for the page-->
+    <h1>Navigating Familiy Law in Kitsap County without an Attorney</h1>
+    <section>
+        <!--What this page is about with a few links-->
+        <article>
+            Going to court, filing legal paperwork are already daunting enough tasks without
+            the stress that usually precedes and persists going through this process. I've tried to compile the basic
+            information needed to disolve a marriage or domestic partnership here.<br><br>
+            I am not an Attorney nor a Paralegal, this information is just presented as is from
+            personal experience and research I've done to try and navigate this process. <a href="about.html">
+                I'm just a grumpy man with a cat.</a> <br>
+            Please do not take anything from this page as legal advice.<br><br>
+            There are a number of free resources out there that can be used to prepare legal documents.
+            I have links on the <a href="links.html">Resources</a> page as well as an explaination of what
+            each site brings to the table. There is some ridiculous legal speak out there which seems like
+            it is there just to confuse you. I've tried to unpack some of this in the <a href="jargon.html">Jargon</a>
+            page. <br>
+            You can save yourself a lot of money with a little bit of leg work and a basic understanding of court rules
+            and procedings. <a href="https://www.kitsap.gov/sc/Documents/Kitsap_County_Local_Court_Rules.pdf"
+                target="_blank">An exhaustive list of court rules</a> in Kitsap County is available. <br>
+            For those that qualify <a href="https://kitsaplegalaid.org/" target="_blank">Kitsap Legal Aid Services</a>
+            is a good resource.<br>
+            While there is an <a
+                href="https://kitsap.sharepoint.com/sites/SuperiorCourtExt/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FSuperiorCourtExt%2FShared%20Documents%2FWebsite%20Letters%20to%20public%2Fefilewa%20letter%2Epdf&parent=%2Fsites%2FSuperiorCourtExt%2FShared%20Documents%2FWebsite%20Letters%20to%20public&p=true&ga=1"
+                target="_blank">E-File
+                System</a> in Kitsap Country, you must file bench copies in person so you won't save a trip to the court
+            house.
+        </article>
+    </section>
+    <!--This is the javascript used to make the navbar function-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+<footer>
+    <br><a href="#">Return to Top</a><br>
+    <!--A link to the contact page for feedback... maybe-->
+    Author: Sam Henninger 2024 <a href="contact.html" target="_blank">Contact Us</a>
+</footer>
+
+</html>
